@@ -1,0 +1,58 @@
+{% load static %}
+<!-- JS -->
+<script src="{% static 'js/jquery-2.1.4.min.js'%}"></script>
+<script src="{% static 'plugins/rs-plugin-6.custom/js/revolution.tools.min.js'%}"></script>
+<script src="{% static 'plugins/rs-plugin-6.custom/js/rs6.min.js'%}"></script>
+<script src="{% static 'js/mfn.menu.js'%}"></script>
+<script src="{% static 'js/jquery.plugins.js'%}"></script>
+<script src="{% static 'js/jquery.jplayer.min.js'%}"></script>
+<script src="{% static 'js/animations/animations.js'%}"></script>
+<script src="{% static 'js/translate3d.js'%}"></script>
+<script src="{% static 'js/scripts.js'%}"></script>
+<script>
+  var revapi1, tpj;
+
+  function revinit_revslider11() {
+    jQuery(function () {
+      tpj = jQuery;
+      revapi1 = tpj("#rev_slider_1_1");
+      if (revapi1 == undefined || revapi1.revolution == undefined) {
+        revslider_showDoubleJqueryError("rev_slider_1_1");
+      } else {
+        revapi1.revolution({
+          sliderType: "hero",
+          sliderLayout: "fullwidth",
+          visibilityLevels: "1240,1240,778,778",
+          gridwidth: "1240,1240,778,778",
+          gridheight: "910,910,960,960",
+          spinner: "spinner8",
+          perspective: 600,
+          perspectiveType: "global",
+          editorheight: "910,768,960,720",
+          responsiveLevels: "1240,1240,778,778",
+          progressBar: {
+            disableProgressBar: true
+          },
+          navigation: {
+            onHoverStop: false
+          },
+          fallbacks: {
+            allowHTML5AutoPlayOnAndroid: true
+          },
+        });
+      }
+    });
+  }
+  var once_revslider11 = false;
+  if (document.readyState === "loading") {
+    document.addEventListener('readystatechange', function () {
+      if ((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider11) {
+        once_revslider11 = true;
+        revinit_revslider11();
+      }
+    });
+  } else {
+    once_revslider11 = true;
+    revinit_revslider11();
+  }
+</script>

@@ -1,0 +1,338 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block body %}
+
+<body
+	class="home page-template-default page template-slider color-custom style-simple button-custom layout-full-width if-zoom if-border-hide no-content-padding header-plain header-fw sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-right logo-valign-top logo-no-margin logo-no-sticky-padding mobile-tb-center mobile-side-slide mobile-mini-mr-ll tablet-sticky mobile-header-mini mobile-sticky ">
+	<div id="Wrapper">
+		<div id="Header_wrapper">
+			<header id="Header">
+				<div id="Top_bar">
+					<div class="container">
+						{% include 'partials/topbar.html' %}
+					</div>
+				</div>
+				<div class="mfn-main-slider mfn-rev-slider">
+					<p class="rs-p-wp-fix"></p>
+					<rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"
+						style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+						<rs-module id="rev_slider_1_1" data-version="6.2.22">
+							<rs-slides>
+								<rs-slide data-key="rs-1" data-title="Slide" data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;"> <img
+										src="{% static 'images/img-journey.jpg'%}" class="rev-slidebg" data-no-retina>
+									<rs-layer id="slider-1-slide-1-layer-2" data-type="text" data-rsp_ch="on"
+										data-xy="x:l,l,c,c;xo:80px,80px,0,80px;y:t,t,m,m;yo:429px,420px,20px,20px;"
+										data-text="w:normal;s:85,85,53,53;l:100,100,62,62;fw:300;a:left,left,center,center;"
+										data-dim="w:1080px,1080px,676px,676px;" data-frame_0="y:50,50,31,31;"
+										data-frame_1="st:100;sp:800;sR:100;" data-frame_999="o:0;st:w;sR:8100;"
+										style="z-index:9;font-family:Open Sans;"> Nairobi, Kenya </rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-3" data-type="text" data-rsp_ch="on"
+										data-xy="x:l,l,c,c;xo:80px,80px,0,80px;y:t,t,m,m;yo:130px,130px,-110px,-110px;"
+										data-text="w:normal;s:85,85,53,53;l:100,100,62,62;fw:600;a:left,left,center,center;"
+										data-dim="w:1080px,1080px,676px,676px;h:auto,auto,137px,137px;" data-frame_0="y:50,50,31,31;"
+										data-frame_1="st:50;sp:800;sR:50;" data-frame_999="o:0;st:w;sR:8150;"
+										style="z-index:8;font-family:Open Sans;"> We are a leading
+										<br> supplier of glasses and aluminium across </rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-4" data-type="shape" data-rsp_ch="on"
+										data-xy="x:r;xo:80px,80px,50px,50px;yo:629px,629px,264px,264px;"
+										data-text="w:normal;s:20,20,12,12;l:0,0,15,15;"
+										data-dim="w:130px,130px,81px,81px;h:3px,3px,1px,1px;" data-vbility="t,t,f,t"
+										data-frame_0="y:50,50,31,31;" data-frame_1="st:150;sp:800;sR:150;"
+										data-frame_999="o:0;st:w;sR:8050;" style="z-index:11;background-color:#fff;"></rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-5" data-type="shape" data-rsp_ch="on"
+										data-xy="xo:80px,80px,50px,50px;yo:630px,630px,265px,265px;"
+										data-text="w:normal;s:20,20,12,12;l:0,0,15,15;" data-dim="w:1080px,1080px,676px,676px;h:1px;"
+										data-vbility="t,t,f,t" data-frame_0="y:50,50,31,31;" data-frame_1="st:150;sp:800;sR:150;"
+										data-frame_999="o:0;st:w;sR:8050;" style="z-index:10;background-color:rgba(255,255,255,0.6);">
+									</rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-6" data-type="image" data-rsp_ch="on"
+										data-xy="xo:80px,80px,50px,50px;yo:711px,711px,445px,445px;"
+										data-text="w:normal;s:20,20,12,12;l:0,0,15,15;"
+										data-dim="w:195px,195px,122px,122px;h:72px,72px,44px,44px;" data-vbility="t,t,f,t"
+										data-frame_0="sX:0.9;sY:0.9;" data-frame_1="e:power2.inOut;st:200;sp:800;sR:200;"
+										data-frame_999="o:0;st:w;sR:8000;" style="z-index:12;"><img
+											src="{% static 'images/factory3-company-pic3.png'%}" width="195" height="72" data-no-retina>
+									</rs-layer>
+									<rs-layer id="slider-1-slide-1-layer-7" data-type="text" data-rsp_ch="on"
+										data-xy="xo:333px,333px,208px,208px;yo:716px,716px,449px,449px;"
+										data-text="w:normal;s:16,16,9,9;l:30,30,18,18;" data-dim="w:360px,360px,225px,225px;"
+										data-vbility="t,t,f,t" data-frame_0="sX:0.9;sY:0.9;" data-frame_1="e:power2.inOut;st:250;sp:800;"
+										data-frame_999="o:0;st:w;sR:7950;" style="z-index:13;font-family:Open Sans;">
+										<h3 style="color:rgb(226, 29, 29); font-weight:bold; font-style: italic;"> Glass is what we do
+										</h3>
+									</rs-layer><a id="slider-1-slide-1-layer-8" class="rs-layer rev-btn" href="{% url 'contact' %}"
+										target="_self" rel="nofollow" data-type="button" data-color="#720e03" data-rsp_ch="on"
+										data-xy="x:r,r,c,c;xo:80px,80px,0,80px;y:t,t,m,m;yo:719px,719px,140px,140px;"
+										data-text="w:normal;s:20,20,20,20;l:60;fw:500;" data-dim="minh:0px,0px,none,0px;"
+										data-padding="r:45;l:45;" data-frame_0="y:50,50,31,31;" data-frame_1="st:300;sp:800;sR:300;"
+										data-frame_999="o:0;st:w;sR:7900;"
+										data-frame_hover="c:#720e03;bgc:#a01101;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;"
+										style="z-index:14;background-color:#df1800;font-family:Roboto;">Hire us now </a>
+								</rs-slide>
+							</rs-slides>
+						</rs-module>
+					</rs-module-wrap>
+				</div>
+			</header>
+		</div>
+		<div id="Content">
+			<div class="content_wrapper clearfix">
+				<div class="sections_group">
+					<div class="entry-content">
+						<div class="section mcb-section mcb-section-meyan2l1w bg-cover"
+							style="padding-top:130px;padding-bottom:420px;background-color:#bfc1c1;background-image:url({% static 'images/back.jpg'%});background-repeat:no-repeat;background-position:center top">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-o7l5r4vsk one valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-221pcx2dt three-fourth column_column">
+											<div class="column_attr clearfix">
+												<h2>Glass is always interested in new, challenging and exciting opportunities</h2>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-iqxvrrcgy one column_divider">
+											<hr class="no_line" style="margin:0 auto 20px">
+										</div>
+									</div>
+								</div>
+								<div class="wrap mcb-wrap mcb-wrap-sxpeuqsyn one-second valign-top clearfix"
+									style="padding:50px 10% 0 0 ">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-kqlj8g9jf one column_column column-margin-10px">
+											<div class="column_attr clearfix">
+												<h2>Our Company</h2>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-gf88w4ldx one column_column column-margin-30px">
+											<div class="column_attr clearfix" style="background-image:url({% static 'images/factory3-pic1.png' %});background-repeat:no-repeat;background-position:left
+												center;padding:0 0 0 40px;">
+												<h6 style="margin: 0">Usantium dolorem laudantium totam</h6>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-u5v5vlegj one column_column">
+											<div class="column_attr clearfix">
+												<p> We’re passionate about serving our clients to the fullest, while continuously growing,
+													learning, and
+													innovating. With competencies across our industry, we offer our customers a more reliable
+													supply chain and
+													confidence</p>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p class="big"> <a
+														style="border-bottom: 2px solid #df1800; padding: 5px 4px; text-decoration: none;"
+														href="company.html">Read more</a><i class="icon-right-open-mini themecolor"></i> </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap mcb-wrap mcb-wrap-0y2ywelgk one-second valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-wkkgm67bz one column_slider">
+											<div class="content_slider flat hide-arrows hide-dots">
+												<ul class="content_slider_ul">
+													<li class="content_slider_li_1"><img width="780" height="800"
+															src="{% static 'images/factory3-home-pic2.jpg'%}" class="scale-with-grid wp-post-image"
+															alt loading="lazy"> </li>
+													<li class="content_slider_li_2"><img width="780" height="800"
+															src="{% static 'images/factory3-home-pic3.jpg'%}" class="scale-with-grid wp-post-image"
+															alt loading="lazy"> </li>
+													<li class="content_slider_li_3"><img width="780" height="800"
+															src="{% static 'images/glass1.jpeg'%}" class="scale-with-grid wp-post-image" alt
+															loading="lazy"> </li>
+												</ul>
+												<div class="slider_pager slider_pagination"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-s551d466c no-margin-h no-margin-v equal-height full-width"
+							style="padding-left:7%;padding-right:7%">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-foe46px2h one valign-top move-up clearfix" style="margin-top:-330px">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-caed96jar one-third column_column">
+											<div class="column_attr clearfix" style="background-color:#627478;padding:120px 15% 105px;">
+												<h2 style="color: #FFF;">Proud of it's journey<span style="color: #acb2b3;"></span></h2>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p style="color: #FFF;"> For over 8 years, we have continuously served the Kenyan Market by
+													providing,
+													installing and maintaining a wide range of glass products, including commercial Buildings,
+													glass facades,
+													and mirrors.
+
+													We have a skilled and dedicated staff who are committed to providing the highest quality glass
+													service in
+													the industry. We are poised for continued growth and new challenges and will relentlessly
+													pursue
+													relationships that will help us achieve our vision.</p>
+												<hr class="no_line" style="margin:0 auto 30px"> <a class="button button_size_2"
+													href="{% url 'about' %}"><span class="button_label">READ MORE</span></a>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-yihwjy692 two-third column_column">
+											<div class="column_attr clearfix bg-cover"
+												style="background-image:url({% static 'images/ls_7.jpg'%});background-repeat:no-repeat;background-position:center;">
+												<hr class="no_line" style="margin:0 auto 500px">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-m3g8q15jb" style="padding-top:130px;padding-bottom:90px">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-1hkyb519i one valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-3wsjwsrcm one-third column_column">
+											<div class="column_attr clearfix"
+												style="background-color:#2c3132;background-image:url({% static 'images/factory3-offer-bg1.png'%});background-repeat:repeat;background-position:center;padding:60px 15%;">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-offer-icon1.png'%}">
+													</div>
+												</div>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<h4 style="color: #FFF;">Delivery</h4>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p style="color: #FFF;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+													eiusmod tempor </p>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-sep1.png'%}"> </div>
+												</div>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-tpt4qge2e one-third column_column">
+											<div class="column_attr clearfix"
+												style="background-color:#2c3132;background-image:url({% static 'images/factory3-offer-bg1.png'%});background-repeat:repeat;background-position:center;padding:60px 15%;">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-offer-icon2.png' %}">
+													</div>
+												</div>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<h4 style="color: #FFF;">Safety operation</h4>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p style="color: #FFF;"> Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh
+													magna. </p>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-sep1.png'%}"> </div>
+												</div>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-sa4gipp25 one-third column_column">
+											<div class="column_attr clearfix"
+												style="background-color:#2c3132;background-image:url({% static 'images/factory3-offer-bg1.png'%});background-repeat:repeat;background-position:center;padding:60px 15%;">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-offer-icon3.png'%}">
+													</div>
+												</div>
+												<hr class=" no_line" style="margin:0 auto 30px">
+												<h4 style="color: #FFF;">Calculation</h4>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<p style="color: #FFF;"> Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
+													amet
+													elementum. </p>
+												<hr class="no_line" style="margin:0 auto 30px">
+												<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+													<div class="image_wrapper"><img class="scale-with-grid"
+															src="{% static 'images/factory3-sep1.png'%}"> </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-5d7om3bq2" style="padding-bottom:90px">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-j1x6u2gic one valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-cp1j9nsei one column_column">
+											<div class="column_attr clearfix">
+												<h2>A selection of our
+													<br>
+													glasses and aluminium frames</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap mcb-wrap mcb-wrap-u01h4tg48 one-second column-margin-0px valign-middle clearfix"
+									style="padding:0 1%">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-bbllpw4m6 one column_image">
+											<div class="image_frame image_item scale-with-grid no_border">
+												<div class="image_wrapper">
+													<a href="offer.html">
+														<div class="mask"></div><img class="scale-with-grid" src="images/factory3-offer-pic1.jpg">
+													</a>
+													<div class="image_links "> <a href="offer.html" class="link"><i class="icon-link"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-39upkf482 one column_column">
+											<div class="column_attr clearfix" style="background-color:rgba(255,255,255,0.4);background-image:url({% static 'images/factory3-sep2.png'%});background-repeat:no-repeat;background-position:right
+												center;padding:20px 20px 5px ;">
+												<h4>Aliquam fringilla</h4>
+											</div>
+										</div>
+										<div class="column mcb-column mcb-item-ffa5mj6vq one column_divider">
+											<hr class="no_line" style="margin:0 auto 30px">
+										</div>
+									</div>
+								</div>
+
+								<div class="wrap mcb-wrap mcb-wrap-omfgrf5aj one valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-pkhmlwh53 one column_divider">
+											<hr class="no_line" style="margin:0 auto 40px">
+										</div>
+										<div class="column mcb-column mcb-item-2dyfw56u0 one-third column_placeholder">
+											<div class="placeholder"> &nbsp; </div>
+										</div>
+										<div class="column mcb-column mcb-item-f2b42hl09 one-third column_button"> <a
+												class="button button_full_width button_size_2" href="{% url 'offers' %}"><span
+													class="button_label">See
+													our offer</span></a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section mcb-section mcb-section-l70i30rtv full-width">
+							<div class="section_wrapper mcb-section-inner">
+								<div class="wrap mcb-wrap mcb-wrap-e2xrr9lmq one valign-top clearfix">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-k72lypxpg one column_image">
+											<div class="image_frame image_item no_link scale-with-grid aligncenter stretch no_border">
+												<div class="image_wrapper"><img class="scale-with-grid"
+														src="{% static 'images/factory3-sep3.jpg'%}">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% include 'partials/footer.html' %}
+	</div>
+	<div id="Side_slide" class="right dark" data-width="250">
+		<div class="close-wrapper"> <a href="#" class="close"><i class="icon-cancel-fine"></i></a> </div>
+		<div class="menu_wrapper"></div>
+		<div class="extras"> <a href="(% url 'dashboard' %)" class="action_button" target="_blank">L</a>
+			<div class="extras-wrapper"></div>
+		</div>
+	</div>
+	<div id="body_overlay"></div>
+	{% include 'partials/scripts.html' %}
+
+</body>
+{% endblock %}

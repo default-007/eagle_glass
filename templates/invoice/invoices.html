@@ -1,0 +1,77 @@
+{% extends 'invoice/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Invoices</h1>
+    <a href="{% url 'create-invoice' %}" class="d-none d-sm-inline-block btn btn-md btn-primary shadow-md"><i
+        class="fas fa-plus fa-md text-white-50"></i> Add New Invoice</a>
+  </div>
+
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Client name</th>
+              <th>Phone Number</th>
+              <th>Due Date</th>
+              <th>Invoice Status</th>
+              <th>Delete</th>
+              <th>View</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Client name</th>
+              <th>Phone Number</th>
+              <th>Due Date</th>
+              <th>Invoice Status</th>
+              <th>Delete</th>
+              <th>View</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            {% for invoice in invoices %}
+            <tr>
+              <td>{{invoice.number}}</td>
+              <td>{{invoice.title}}</td>
+              <td>{{invoice.client.clientName}}</td>
+              <td>{{invoice.client.phoneNumber}}</td>
+              <td>{{invoice.dueDate}}</td>
+              <td>{{invoice.status}}</td>
+              <td>
+                <a href="{% url 'delete-invoice' invoice.slug %}"><button class="btn btn-danger"> DELETE </button></a>
+              </td>
+              <td>
+                <a href="{% url 'create-build-invoice' invoice.slug %}"><button class="btn btn-primary"> VIEW
+                  </button></a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+
+{% endblock %}

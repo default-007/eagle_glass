@@ -1,0 +1,83 @@
+{% extends 'invoice/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block main %}
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Clients</h1>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addClientModal">
+      Add New Client
+    </button>
+
+    <div class="modal fade" id="addClientModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addClientModalLabel">Add new client</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            {% csrf_token %}
+            {{form.as_p}}
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <td>#</td>
+              <th scope="col">Client Name</th>
+              <th scope="col">Email Address</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Address Line</th>
+              <th scope="col">Province</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for client in clients %}
+            <tr>
+              <td></td>
+              <td>{{client.clientName}}</td>
+              <td>{{client.emailAddress}}</td>
+              <td>{{client.phoneNumber}}</td>
+              <td>{{client.addressLine1}}</td>
+              <td>{{client.county}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+
+
+
+
+{% endblock %}
